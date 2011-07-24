@@ -1,0 +1,39 @@
+<%= form_for @location do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :street %><br />
+    <%= f.text_field :address_street %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :address_city %>
+  </p>
+  <p>
+    <%= f.label :state %><br />
+    <%= f.text_field :address_state %>
+  </p>
+  <p>
+    <%= f.label :country %><br />
+    <%= f.text_field :address_country %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+ <%f.select :category, [['horrible', 1], ['poor', 2], ['mediocre', 3], ['good', 4], ['great', 5]] %> 
+
+  <p>
+    <%= f.label :time %><br />
+    <%= f.time_select :time %>
+  </p>
+  <p>
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </p>
+
+  <p><%= f.submit %></p>
+<% end %>

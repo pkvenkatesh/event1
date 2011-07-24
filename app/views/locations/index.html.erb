@@ -1,0 +1,36 @@
+<% title "Events" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Street</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Category</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+ 
+  </tr>
+  <% for location in @locations %>
+    <tr>
+      <td><%= location.name %></td>
+      <td><%= location.address_street %></td>
+      <td><%= location.address_city %></td>
+      <td><%= location.address_state %></td>
+      <td><%= location.address_country %></td>
+      <td><%= location.date %></td>
+      <td><%= location.time %></td>
+      <td><%= location.category %></td>
+      <td><%= location.latitude %></td>
+      <td><%= location.longitude %></td>
+      <td><%= link_to "Show", location %></td>
+      <td><%= link_to "Edit", edit_location_path(location) %></td>
+      <td><%= link_to "Delete", location, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Event", new_location_path %></p>

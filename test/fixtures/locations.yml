@@ -1,0 +1,23 @@
+one:
+  name: MyString
+  address_street: MyString
+  address_city: MyString
+  address_state: MyString
+  address_country: MyString
+  date: 2011-07-22
+  time: 2011-07-22 22:36:21
+  category: MyString
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  name: MyString
+  address_street: MyString
+  address_city: MyString
+  address_state: MyString
+  address_country: MyString
+  date: 2011-07-22
+  time: 2011-07-22 22:36:21
+  category: MyString
+  latitude: 1.5
+  longitude: 1.5

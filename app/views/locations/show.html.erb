@@ -1,0 +1,48 @@
+<% title "Event" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @location.name %>
+</p>
+<p>
+  <strong>Address Street:</strong>
+  <%= @location.address_street %>
+</p>
+<p>
+  <strong>Address City:</strong>
+  <%= @location.address_city %>
+</p>
+<p>
+  <strong>Address State:</strong>
+  <%= @location.address_state %>
+</p>
+<p>
+  <strong>Address Country:</strong>
+  <%= @location.address_country %>
+</p>
+<p>
+  <strong>Date:</strong>
+  <%= @location.date %>
+</p>
+<p>
+  <strong>Time:</strong>
+  <%= @location.time %>
+</p>
+<p>
+  <strong>Category:</strong>
+  <%= @location.category %>
+</p>
+<p>
+  <strong>Latitude:</strong>
+  <%= @location.latitude %>
+</p>
+<p>
+  <strong>Longitude:</strong>
+  <%= @location.longitude %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_location_path(@location) %> |
+  <%= link_to "Delete", @location, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", locations_path %>
+</p>
